@@ -60,7 +60,9 @@ export const App: React.FC = () => {
       <div className="buttons">
         <button
           type="button"
-          className={`button is-info ${sortBy === SortType.ALPHABETICALLY ? '' : 'is-light'}`}
+          className={`button is-info ${
+            sortBy === SortType.ALPHABETICALLY ? '' : 'is-light'
+          }`}
           onClick={handleSortAlphabetically}
         >
           Sort alphabetically
@@ -68,7 +70,9 @@ export const App: React.FC = () => {
 
         <button
           type="button"
-          className={`button is-success ${sortBy === SortType.LENGTH ? '' : 'is-light'}`}
+          className={`button is-success ${
+            sortBy === SortType.LENGTH ? '' : 'is-light'
+          }`}
           onClick={handleSortByLength}
         >
           Sort by length
